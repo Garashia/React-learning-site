@@ -1,0 +1,84 @@
+[
+  {
+    "id": "lesson1",
+    "slug": "lesson1",
+    "title": "useState でカウンターを作る",
+    "description": "ボタンをクリックしてカウントアップする基本のコンポーネントを作ってみましょう。",
+    "markdownUrl": "/lessons/lesson1.md",
+    "module": "./lesson1"
+  },
+  {
+    "id": "lesson2",
+    "slug": "lesson2",
+    "title": "フォーム入力と制御コンポーネント",
+    "description": "input の値を state で管理し、入力値を表示・送信する基本を学びます。",
+    "markdownUrl": "/lessons/lesson2.md",
+    "module": "./lesson2"
+  },
+  {
+    "id": "lesson3",
+    "slug": "lesson3",
+    "title": "useEffect でデータ取得（fetch/ローディング/エラー）",
+    "description": "外部APIからの取得・ローディング・エラー処理の基本を学びます。",
+    "markdownUrl": "/lessons/lesson3.md",
+    "module": "./lesson3"
+  },
+  {
+    "id": "lesson4",
+    "slug": "lesson4",
+    "title": "リストと key / 条件分岐",
+    "description": "配列の描画と key、条件表示の基本パターンを学びます。",
+    "markdownUrl": "/lessons/lesson4.md",
+    "module": "./lesson4"
+  },
+  {
+    "id": "lesson5",
+    "slug": "lesson5",
+    "title": "コンテキストとカスタムフック",
+    "description": "状態共有とロジック再利用（カスタムフック）を学びます。",
+    "markdownUrl": "/lessons/lesson5.md",
+    "module": "./lesson5"
+  },
+  {
+    "id": "lesson6",
+    "slug": "lesson6",
+    "title": "ルーティング入門（React Router）",
+    "description": "ページ遷移とURLパラメータの基本を学びます。",
+    "markdownUrl": "/lessons/lesson6.md",
+    "module": "./lesson6"
+  },
+  {
+    "id": "lesson7",
+    "slug": "lesson7",
+    "title": "エラーバウンダリ",
+    "description": "子の例外を捕捉しUI崩壊を防ぐ。設計意図と使い所を学ぶ。",
+    "markdownUrl": "/lessons/lesson7.md",
+    "module": "./lesson7"
+  },
+  {
+    "id": "lesson8",
+    "slug": "lesson8",
+    "title": "パフォーマンス最適化（memo/useMemo/useCallback）",
+    "description": "再レンダリング抑制と計算メモ化、関数参照の安定化。",
+    "markdownUrl": "/lessons/lesson8.md",
+    "module": "./lesson8"
+  },
+  {
+    "id": "lesson9",
+    "slug": "lesson9",
+    "title": "useReducer で状態管理入門",
+    "description": "reducer/dispatch で複雑な状態遷移を整理する。",
+    "markdownUrl": "/lessons/lesson9.md",
+    "module": "./lesson9"
+  },
+  {
+    "id": "lesson10",
+    "slug": "lesson10",
+    "title": "総合ミニ課題：メモアプリ",
+    "description": "フォーム/リスト/検索/永続化を組み合わせる仕上げ課題。",
+    "markdownUrl": "/lessons/lesson10.md",
+    "module": "./lesson10"
+  }
+]
+
+

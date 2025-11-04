@@ -28,6 +28,191 @@
   color: #61dafb;
 }
 
+/* ---------- Layout additions for lessons ---------- */
+.root-typography {
+  line-height: 1.8;
+  font-size: 16px;
+  color: #111827;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+  text-align: left;
+}
+
+.lesson-grid {
+  display: grid;
+  grid-template-columns: minmax(320px, 1fr) minmax(520px, 1.4fr);
+  gap: 16px;
+  align-items: start;
+}
+
+/* vertical layout: editor&preview on top, docs below */
+.lesson-stack {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  gap: 16px;
+}
+
+.pane {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.pane-header {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  padding: 12px 16px;
+  border-bottom: 1px solid #f0f0f0;
+  font-weight: 600;
+}
+
+.pane-body {
+  padding: 0;
+}
+
+.doc-pane .pane-body {
+  padding: 16px;
+  line-height: 1.8;
+  max-width: 840px;
+}
+
+@media (max-width: 960px) {
+  .lesson-grid {
+    grid-template-columns: 1fr;
+  }
+  .lesson-stack {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+}
+
+/* ---------- Navbar styles ---------- */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(6px);
+  background: rgba(255,255,255,0.8);
+  border-bottom: 1px solid #eee;
+}
+.navbar .navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+}
+.brand {
+  font-weight: 700;
+  color: #111;
+  text-decoration: none;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.nav-link {
+  color: #5b21b6;
+  text-decoration: none;
+  padding: 6px 8px;
+  border-radius: 6px;
+}
+.nav-link:hover { background: #f3e8ff; }
+.nav-dropdown { position: relative; }
+.nav-dropdown .has-caret::after {
+  content: '▾';
+  margin-left: 6px;
+  font-size: 12px;
+}
+.dropdown {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  min-width: 320px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  padding: 8px;
+  display: none;
+}
+.nav-dropdown:hover .dropdown { display: block; }
+.dropdown-item {
+  display: block;
+  text-decoration: none;
+  color: #111;
+  padding: 8px;
+  border-radius: 8px;
+}
+.dropdown-item:hover { background: #f9fafb; }
+.dropdown-title { font-weight: 600; }
+.dropdown-desc { font-size: 12px; color: #666; }
+
+/* ---------- Buttons ---------- */
+.btn {
+  appearance: none;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.btn:hover { background: #f9fafb; }
+.btn[aria-pressed='true'] {
+  background: #ede9fe;
+  border-color: #c4b5fd;
+}
+
+/* ---------- Markdown code block with copy button ---------- */
+.codeblock {
+  position: relative;
+}
+.codeblock .copy-btn {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  font-size: 12px;
+  padding: 4px 8px;
+  border: 1px solid #e5e7eb;
+  background: rgba(255,255,255,0.9);
+  border-radius: 6px;
+  cursor: pointer;
+}
+.codeblock .copy-btn:hover {
+  background: #f3f4f6;
+}
+.codeblock pre {
+  margin: 0;
+  padding: 12px 16px;
+  background: #0f172a0a;
+  border-top: 1px solid #eef2f7;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.doc-pane h2 { font-size: 1.6rem; margin: 28px 0 8px; }
+.doc-pane h3 { font-size: 1.25rem; margin: 24px 0 6px; }
+.doc-pane p { margin: 10px 0 12px; }
+.doc-pane ul, .doc-pane ol { margin: 8px 0 12px 22px; }
+
+/* ---------- TOC ---------- */
+.toc {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 12px;
+  background: #fff;
+  margin-bottom: 12px;
+}
+.toc-title { font-weight: 700; margin-bottom: 6px; }
+.toc a { text-decoration: none; color: #6b21a8; }
+.toc a:hover { text-decoration: underline; }
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
