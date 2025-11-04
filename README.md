@@ -1,4 +1,17 @@
-# Getting Started with Create React App
+# React 学習サイト
+
+このプロジェクトは、**入力しながら学べるReact学習サイト**です。ブラウザ上でコードを編集・実行しながら、Reactの基礎から実務で役立つパターンまで学習できます。
+
+## 開発について
+
+このプロジェクトは [Cursor](https://cursor.sh/)（AIアシスタント付きエディタ）を使用して作成されました。
+
+## 技術スタック
+
+- React 18
+- React Router
+- Sandpack (CodeSandbox)
+- Create React App で起動
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
