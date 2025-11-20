@@ -25,7 +25,9 @@ export default function MarkdownView({ src }) {
   useEffect(() => {
     let active = true;
     if (!src) return;
-    fetch(src)
+    // process.env.PUBLIC_URL を頭にくっつける
+    const targetUrl = src.startsWith('http') ? src : (process.env.PUBLIC_URL + src);
+    fetch(targetUrl)
       .then(r => r.ok ? r.text() : Promise.reject(r.statusText))
       .then(t => { if (active){ setContent(t); setToc(buildToc(t)); } })
       .catch(() => { if (active) setContent('# 読み込みエラー'); });
