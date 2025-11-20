@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/React-learning-site/static/css/main.e56547c5.css",
-    "main.js": "/React-learning-site/static/js/main.bc56645c.js",
+    "main.js": "/React-learning-site/static/js/main.08c7cae2.js",
     "lesson-lesson1.js": "/React-learning-site/static/js/lesson-lesson1.c525ed2f.chunk.js",
     "lesson-lesson10.js": "/React-learning-site/static/js/lesson-lesson10.cdc84fe9.chunk.js",
     "lesson-lesson2.js": "/React-learning-site/static/js/lesson-lesson2.dea907f8.chunk.js",
@@ -20,7 +20,7 @@
     "static/js/55.ecc345ef.chunk.js": "/React-learning-site/static/js/55.ecc345ef.chunk.js",
     "index.html": "/React-learning-site/index.html",
     "main.e56547c5.css.map": "/React-learning-site/static/css/main.e56547c5.css.map",
-    "main.bc56645c.js.map": "/React-learning-site/static/js/main.bc56645c.js.map",
+    "main.08c7cae2.js.map": "/React-learning-site/static/js/main.08c7cae2.js.map",
     "lesson-lesson1.c525ed2f.chunk.js.map": "/React-learning-site/static/js/lesson-lesson1.c525ed2f.chunk.js.map",
     "lesson-lesson10.cdc84fe9.chunk.js.map": "/React-learning-site/static/js/lesson-lesson10.cdc84fe9.chunk.js.map",
     "lesson-lesson2.dea907f8.chunk.js.map": "/React-learning-site/static/js/lesson-lesson2.dea907f8.chunk.js.map",
@@ -40,6 +40,6 @@
   },
   "entrypoints": [
     "static/css/main.e56547c5.css",
-    "static/js/main.bc56645c.js"
+    "static/js/main.08c7cae2.js"
   ]
 }
