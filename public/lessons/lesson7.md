@@ -28,3 +28,4 @@ class ErrorBoundary extends React.Component {
 2. バウンダリを入れる位置を `Danger` の親/祖先で変えて挙動を比較
 
 
+

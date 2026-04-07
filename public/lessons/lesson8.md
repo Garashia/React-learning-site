@@ -23,3 +23,4 @@ const Row = React.memo(function Row({ value }){ return <li>{value}</li>; });
 3. `key` をわざと不安定にして挙動を観察
 
 
+
